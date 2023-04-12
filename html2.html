@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./web-design.png" type="image/x-icon">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: sans-serif;
+    }
+    header {
+        top: 0;
+        position: sticky;
+        box-shadow: 0px 2px 10px #00000054;
+        z-index: 1;
+        background-color: #ffffff;
+    }
+  
+    .continer{
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0 auto;
+    }
+    ul{
+        display:flex;
+        list-style: none;
+        
+    }
+    li{
+        margin: 0 10px; 
+    
+    }
+    a{
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 5px;
+        font-weight: bold;
+        color: #000000;
+        text-transform: capitalize;
+    }
+    a:hover{
+        background-color: rgb(0, 0, 0);
+        color: #ffffff;
+    }
+
+    section{
+        height: 100vh;
+        display: flex;
+       justify-content: center;
+       align-items: center;
+        color: solid black;
+        font-size: 3rem;
+        text-transform: capitalize;
+    }
+
+    #home{
+        background-color: #cdb4db;
+    }
+    #about{
+        background-color: #ffc8dd;
+    }
+    #page{
+        background-color: #ffafcc;
+    }
+    #contact{
+        background-color: #bde0fe;
+    }
+</style>
+<body>
+    <header>
+        <div class="continer">
+            <div class="logo">LOGO</div>
+
+            <ul>
+                <li> <a href="#home">home</a> </li>
+                <li> <a href="#about">about</a> </li>
+                <li> <a href="#page">page</a> </li>
+                <li> <a href="#contact">contact</a> </li>
+            
+            </ul>
+        </div>
+    </header>
+        <section id="home"><div>home</div></section>
+        <section id="about"><div>about</div></section>
+        <section id="page"><div>page</div></section>
+        <section id="contact"><div>contact</div></section>
+        
+    
+</body>
+</html>
